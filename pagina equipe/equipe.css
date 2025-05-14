@@ -20,7 +20,7 @@ main {
 
 /* Botão de retorno a página principal */
 .retornar {
-    margin-top: 35px;
+    margin-top: 490px;
 }
 .botao-retorno {
     display: inline-block;
@@ -45,4 +45,3 @@ main {
 .botao-retorno:active {
     transform: translateY(0);
 }
-
