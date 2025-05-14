@@ -14,8 +14,35 @@ body {
 
 /* Conteúdo principal */
 main {
-    margin: 4.5px;
+    margin: 30px;
     padding: 22px 25px;
+}
+
+.separador-conteudo {
+    border-top: 2px solid #a5d2ff;
+    margin: 5px;
+}
+
+/* Contexto da questão */
+.contexto {
+    border: 1px solid #1a252f;
+    border-radius: 5%;
+    margin: 13px 425px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /*
+    width: 80%; -largura-
+    max-height: 450px;              preciso arrumar essa caixinha
+    box-sizing: border-box;
+    /*
+}
+.contexto-paragrafo, .enunciado {
+    margin: 3.5px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.6;
+    hyphens: auto;
 }
 
 /* Botão de retorno a página principal */
