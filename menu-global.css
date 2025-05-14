@@ -1,0 +1,125 @@
+/* Reset básico */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Conteúdo principal */
+main {
+    margin-top: 50px;
+    padding: 20px;
+}
+        
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 100;
+    padding: 10px 20px;
+}
+        
+/* Botão do menu */
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #555;
+}
+        
+/* Container do menu */
+details {
+    position: relative;
+    display: inline-block;
+}
+        
+/* Estilo do menu principal */
+details > summary {
+     list-style: none;
+    cursor: pointer;
+}
+        
+details > summary::-webkit-details-marker {
+    display: none;
+}
+        
+/* Menu dropdown */
+details > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 101;
+    margin-top: 5px;
+}
+        
+/* Itens do menu */
+ul {
+    list-style: none;
+}
+        
+li a {
+    display: block;
+    padding: 8px 15px;
+    color: #444;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+        
+li a:hover {
+    background: #f0f0f0;
+    border-left: 3px solid #666;
+}
+        
+/* Submenus */
+details details {
+    width: 100%;
+}
+        
+details details > summary {
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+        
+details details > summary:after {
+    content: "+";
+    position: absolute;
+    right: 15px;
+    transition: transform 0.2s;
+}
+        
+details details[open] > summary:after {
+    transform: rotate(45deg);
+}
+        
+details details > ul {
+    position: static;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 15px;
+    border-left: 1px solid #eee;
+}

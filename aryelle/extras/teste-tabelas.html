@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste tabela</title>
+</head>
+<body>
+    
+<style>
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 25px auto;
+        font-family: Arial, sans-serif;
+    }
+    
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .destaque {
+        font-weight: bold;
+        color: #e74c3c;
+    }
+</style>
+
+<table>
+                <caption>Nível de dificuldade das questões</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Questões</th>
+                        <th scope="col">Pontos</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Very Easy</td>
+                        <td>02 a 06</td>
+                        <td>0,3</td>
+                        <td class="destaque">1,5</td>
+                    </tr>
+                    <tr>
+                        <td>Easy</td>
+                        <td>08 a 14</td>
+                        <td>0,4</td>
+                        <td class="destaque">2,8</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>16 a 22</td>
+                        <td>0,5</td>
+                        <td class="destaque">3,5</td>
+                    </tr>
+                    <tr>
+                        <td>Hard</td>
+                        <td>24 a 28</td>
+                        <td>0,7</td>
+                        <td class="destaque">3,5</td>
+                    </tr>
+                    <tr>
+                        <td>Very Hard</td>
+                        <td>29 e 30</td>
+                        <td>2,0</td>
+                        <td class="destaque">4,0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+</body>
+</html>

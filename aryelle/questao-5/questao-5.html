@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+    <link rel="stylesheet" href="questao-5.css">
+</head>
+<body>    
+    <main>
+        <div class="nao-sei-ainda">
+        <h1>Very Easy</h1>
+        <h2>Questão 5 - História Escondida I</h2>
+        </div>
+
+        <div class="contexto">
+            <p>
+            Durante uma missão de exploração no planeta Ondur a tropa de reconhecimento encontrou tabuletas contendo escritos de uma antiga civilização, mas ao traduzir seu conteúdo as mensagens não faziam sentido.
+        </p>
+        <p>
+            Porém, um pesquisador que estudava os escritos percebeu que poderiam haver mensagens escondidas.
+        </p>
+        <p>
+            Como os escritos eram muitos e para poder analisar melhor ele solicitou que você criasse um programa que o ajudasse a encontrar a história escondida contada pelas tabuletas.
+        </p>
+        <p>
+            Para conseguir isso o programa precisar ser capaz de identificar a maior letra (segundo a ordem alfabética) de cada trecho dos escritos.
+        </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que recebe uma string e retorna a maior letra segundo a ordem alfabética em minúsculo. Assuma que a string não possui nenhuma letra com acento, número ou caractere especial, apenas letras e espaços.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="resolucao">
+            <!--Receber string--> 
+            <h1>História Escondida I</h1>
+            
+            <input type="text" id="fraseInput"  placeholder="Digite aqui...">
+
+            <!--botão de enviar string--> 
+            <button onclick="resolucaoCharada()">Resulução</button>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-5.js"></script>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas:</h3>
+            <ul>
+                <li>Entrada: ('Lorem ipsum dolore sec avanti')</br>Saída: 'v'</li>
+                <li>Entrada: ('Hello')</br>Saída: 'o'</li>
+                <li>Entrada: ('May the forcee be with you')</br>Saída: 'y'</li>
+                <li>Entrada: ('Its over nine thousand')</br>Saída: 'v'</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="retorno">
+        <button>
+            <a href="/pagina inicial/pagina-inicial.html">Página Inicial</a>
+        </button>
+    </footer>
+</body>
+</html>
