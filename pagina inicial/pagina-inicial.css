@@ -11,3 +11,37 @@ body {
     background: #f8f8f8;
     color: #333;
 }
+
+/* Introdução */
+.introducao {
+    text-align: center;
+}
+
+/* Tabela */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-family: Arial, sans-serif;
+}
+
+.titulo-tabela {
+    font-size: 18px;
+    margin: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+    
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+    
+tr:hover {
+    background-color: #cfcfcf;
+}

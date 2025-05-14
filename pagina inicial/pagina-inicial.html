@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="/menu-global.css">
+    <link rel="stylesheet" href="pagina-inicial.css">
 </head>
 <body>
     <header>
@@ -84,12 +85,14 @@
     </header>
     
     <main>
-        <h1>Trabalho NUP 2 - Programação para Web I</h1>
-        <p>Resolver a lista de exercícios em anexo, onde o valor de cada questão é especificado por dificuldade de acordo com a tabela abaixo.</p>
+        <div class="introducao">
+            <h1>Trabalho NUP 2 - Programação para Web I</h1>
+            <p>Resolver a lista de exercícios em anexo, onde o valor de cada questão é especificado por dificuldade de acordo com a tabela abaixo.</p>
+        </div>
         
         <div class="dificuldade-questoes">
             <table>
-                <caption>Nível de dificuldade das questões</caption>
+                <caption class="titulo-tabela">Nível de dificuldade das questões</caption>
                 <thead>
                     <tr>
                         <th scope="col">Categoria</th>
@@ -132,11 +135,11 @@
                 </tbody>
             </table>
         </div>
-
+        <!--
         <div class="falte-meu-filho">
             <img src="https://res.cloudinary.com/dwo0cr0p9/image/upload/falte-meu-filho_k4kram.jpg" alt="jesus falando 'falte meu filho'." style="height: 40%; width: 40%;">
         </div>
-        
+        -->
     </main>
 </body>
 </html>
