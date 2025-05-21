@@ -11,22 +11,28 @@
    
     <main>
         <div class="cabecalho">
-        <h1>Very Easy</h1>
-        <h2>Questão 02 - Procedimento Recursivo I</h2>
+        <h1>Hard</h1>
+        <h2>Questão 25 - Validações do Compilador</h2>
         </div>
 
         <div class="contexto">
             <p class="contexto-paragrafo">
-            A equipe de manutenção da nave Highwind solicitou a sua ajuda para analisar o desempenho do computador portátil utilizado pela equipe de reconhecimento.
+        Você e sua equipe estão trabalhando em um compilador que deverá converter o código escrito em uma linguagem moderna para uma outra linguagem mais antiga que é utilizada pelo sistema principal da sua nave. 
+          
             <br>
-            Para isso, em um determinado momento, você precisou simular a criação de blocos de informação em formato de texto recursivamente, então decidiu criar uma função para imitar esse comportamento.
+             Uma das tarefas da qual você ficou encarregado foi a de validar os parênteses, colchetes e chaves no código. 
+            <br>
+            Para que sejam válidos os agrupamentos devem ser abertos e fechados corretamente.  
+           
             </p>
             
         </div>
 
         <div class="enunciado">
             <p>
-                Escreva uma função que recebe um número e retorna uma quantidade equivalente de "Chunks" deparados por um traço "-"  sem utilizar nenhuma estrutura de repetição.
+                Escreva uma função que recebe uma string, verifica se ela possui uma distribuição válida de parênteses, colchetes e chaves e retorne TRUE ou FALSE baseada nessa verificação.
+                <br>
+                A função deve ser capaz de funcionar com qualquer string independentemente do conteúdo que acompanha os parênteses, colchetes e chaves.
             </p>
         </div>
 
@@ -49,10 +55,10 @@
         <div class="saida-desejada">
             <h3>Saídas Corretas:</h3>
             <ul>
-                <li>Entrada: (4)</br>Saída: "chunk-chunk-chunk-chunk"</li>
-                <li>Entrada: (1)</br>Saída: "chunk"</li>
-                <li>Entrada: (8)</br>Saída: "chunk-chunk-chunk-chunk-chunk-chunk-chunk-chunk"</li>
-                <li>Entrada: (2)</br>Saída: "chunk-chunk"</li>
+                <li>Entrada: (539)</br>Saída: "3"</li>
+                <li>Entrada: (999)</br>Saída: "4"</li>
+                <li>Entrada: (7)</br>Saída: "0"</li>
+                <li>Entrada: (7169)</br>Saída: "5"</li>
             </ul>
         </div>
 
