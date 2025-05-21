@@ -1,19 +1,169 @@
+/* style.css - Estilo Cyberpunk */
+
 /* Reset básico */
- * {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
+
+/* Fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
     line-height: 1.6;
-    background: #f8f8f8;
-    color: #333;
+    padding: 2rem;
+    text-align: justify;
+    letter-spacing: 0.1em;
 }
 
-/* Conteúdo principal */
 main {
-    margin: 30px;
-    padding: 22px 25px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(20, 20, 40, 0.9);
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
 }
 
+.cabecalho h1 {
+    font-size: 2.5rem;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.cabecalho h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.contexto {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(255, 0, 255, 0.1);
+    border-left: 4px solid #ff00ff;
+}
+
+.contexto-paragrafo {
+    font-size: 1rem;
+    color: #f0f0f0;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.enunciado p {
+    font-size: 1.1rem;
+    background: rgba(0, 255, 255, 0.1);
+    padding: 1rem;
+    border-left: 4px solid #00ffff;
+    margin-bottom: 2rem;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.separador-conteudo {
+    height: 2px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    margin: 2rem 0;
+}
+
+.resolucao h2 {
+    font-size: 1.5rem;
+    color: #ff00ff;
+    margin-bottom: 1rem;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    background: #00ffff;
+    color: #0f0f1a;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.8);
+}
+
+button#resolver {
+    margin-bottom: 2rem;
+}
+
+.saida-desejada h3 {
+    font-size: 1.25rem;
+    color: #00ffff;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.saida-desejada ul {
+    list-style: none;
+    padding-left: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.saida-desejada li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #f0f0f0;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+button.retornar {
+    margin-top: 2rem;
+    display: block;
+}
+
+.botao-retorno {
+    text-decoration: none;
+    color: #ff00ff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ff00ff;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+}
+
+.botao-retorno:hover {
+    background: #ff00ff;
+    color: #0f0f1a;
+    box-shadow: 0 0 16px rgba(255, 0, 255, 0.8);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+    .cabecalho h2 {
+        font-size: 1.25rem;
+    }
+    button, .botao-retorno {
+        width: 100%;
+        text-align: center;
+    }
+}
