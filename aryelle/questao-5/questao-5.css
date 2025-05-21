@@ -68,13 +68,9 @@ main {
 }
 
 #fraseInput{
-    background: #d0e7ff;
+    background: #e0efff;
     width: 90%; 
     max-width: fit-content;
-}
-
-.resolucao-btn {
-
 }
 
 /* Container da "saida desejada"*/
