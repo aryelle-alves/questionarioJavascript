@@ -43,14 +43,16 @@
 
         <div class="separador-conteudo"></div>
 
-        <div class="resolucao">
+        <div class="container-resolucao">
             <!--Receber string--> 
-            <h2>História Escondida I</h2>
-            
-            <input type="text" id="fraseInput"  placeholder="Digite aqui...">
+            <h2 class="titulo-resolucao">História Escondida I</h2>
 
-            <!--botão de enviar string--> 
-            <button onclick="resolucaoCharada()">Resulução</button>
+             <div class="input-button">
+                <input type="text" id="fraseInput"  placeholder="Digite aqui...">
+
+                <!--botão de enviar string--> 
+                <button onclick="resolucaoCharada()" class="resolucao-btn">Resulução</button>
+             </div>
 
             <!--resposta-->
             <div id="resultado"></div>
@@ -59,10 +61,9 @@
 
         <div class="separador-conteudo"></div>
 
-
-        <div class="saida-desejada">
+        <div class="container-saida">
             <h3>Saídas Corretas:</h3>
-            <ul>
+            <ul class="saidas-desejadas">
                 <li>Entrada: ('Lorem ipsum dolore sec avanti')</br>Saída: 'v'</li>
                 <li>Entrada: ('Hello')</br>Saída: 'o'</li>
                 <li>Entrada: ('May the forcee be with you')</br>Saída: 'y'</li>
