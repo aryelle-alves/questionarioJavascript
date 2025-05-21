@@ -1,0 +1,19 @@
+/* Reset básico */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Conteúdo principal */
+main {
+    margin: 30px;
+    padding: 22px 25px;
+}
+
