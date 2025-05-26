@@ -1,47 +1,115 @@
-/* Reset básico */
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-        
+/* Importação da fonte Orbitron (coloque no início do seu CSS) */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Estilos Globais e Corpo da Página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a; /* Fundo escuro cyberpunk */
+    color: #e0e0e0;             /* Cor do texto principal */
+    font-family: 'Orbitron', sans-serif; /* Fonte cyberpunk */
     line-height: 1.6;
-    background: #f8f8f8;
-    color: #333;
+    margin: 0;                  /* Remove margens padrão do navegador */
+    padding: 2rem;              /* Espaçamento interno geral */
+    letter-spacing: 0.1em;
+    /* text-align: justify;  Considere 'left' ou remova se não necessário para esta página */
 }
 
-/* Conteúdo principal */
-main {
-    margin: 4.5px;
-    padding: 22px 25px;
+/* Estilos para a Seção da Equipe */
+.equipe-container {
+  padding: 20px;
+  margin: 20px auto; /* Centraliza o container se houver largura máxima */
+  max-width: 1200px; /* Largura máxima para o conteúdo da equipe */
 }
 
-/* Botão de retorno a página principal */
-.retornar {
-    margin-top: 490px;
-}
-.botao-retorno {
-    display: inline-block;
-    padding: 6px 10px;
-    background-color: #a5d2ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    font-family: Arial, sans-serif;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
+.titulo-secao {
+  color: #f0f0f0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em; /* Tamanho do título da seção */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff00ff; /* Sombra neon rosa */
 }
 
-.botao-retorno:hover {
-    background-color: #1a252f;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px #00000033;
+.membros {
+  display: grid;
+  /* Cria colunas responsivas:
+     - auto-fit: ajusta o número de colunas conforme o espaço disponível.
+     - minmax(250px, 1fr): cada coluna terá no mínimo 250px e no máximo 1 fração do espaço disponível.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Espaço entre os cards dos membros */
 }
 
-.botao-retorno:active {
-    transform: translateY(0);
+/* Estilo para cada membro da equipe */
+.membro {
+  background-color: rgba(20, 20, 40, 0.9); /* Fundo translúcido escuro, similar ao 'main' da referência */
+  border: 2px solid #00ffff; /* Borda ciano */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Sombra neon ciano, similar à referência */
+  text-align: center;
+  transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+.foto-perfil {
+  width: 120px;  /* Largura da área da foto */
+  height: 120px; /* Altura da área da foto */
+  border-radius: 50%; /* Torna a área da foto circular */
+  overflow: hidden;   /* Garante que a imagem não ultrapasse as bordas circulares */
+  margin: 0 auto 15px; /* Centraliza a foto e adiciona margem inferior */
+  border: 2px solid #ff00ff; /* Borda da foto rosa */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Sombra neon rosa na foto */
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra a área da foto sem distorcer */
+}
+
+.nome-membro {
+  color: #e0e0e0; /* Cor do nome do membro */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem; /* Tamanho do nome do membro */
+  margin-top: 10px; /* Espaçamento acima do nome */
+  margin-bottom: 5px; /* Espaçamento abaixo do nome */
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7); /* Sombra neon ciano no nome */
+}
+
+.cargo-membro {
+  color: #a0a0a0;   /* Cor do cargo, um pouco mais suave */
+  font-size: 0.9em;
+  letter-spacing: 0.05em; /* Pequeno ajuste no espaçamento das letras */
+}
+
+/* Efeitos de hover para o card do membro */
+.membro:hover {
+  border-color: #ff00ff; /* Muda a cor da borda no hover */
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8); /* Intensifica a sombra no hover */
+  transform: translateY(-5px); /* Leve elevação do card no hover */
+}
+
+/* Adaptação do estilo do 'main' da sua referência para o .equipe-container, caso queira um fundo delimitado */
+/* Se você quiser que o .equipe-container tenha um fundo e borda como o 'main' da referência,
+   descomente e ajuste o seguinte: */
+
+.equipe-container {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background: rgba(20, 20, 40, 0.9);
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+.membro {
+    background-color: rgba(10, 10, 20, 0.85); 
+    border: 2px solid #ff00ff; 
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); 
+}
+
+.membro:hover {
+  border-color: #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  transform: translateY(-5px);
 }
