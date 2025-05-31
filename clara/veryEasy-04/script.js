@@ -1,5 +1,5 @@
 function elevacaoQuadraticaIndividual(numero) {
-  const numeroStr = numero.toString(); // converte o número para string
+  const numeroStr = numero.toString();
   let resultado = '';
 
   for (let i = 0; i < numeroStr.length; i++) {
@@ -8,7 +8,7 @@ function elevacaoQuadraticaIndividual(numero) {
     resultado += quadrado.toString();
   }
 
-  return parseInt(resultado); // retorna o número inteiro concatenado
+  return parseInt(resultado);
 }
 
 function aoClicar() {

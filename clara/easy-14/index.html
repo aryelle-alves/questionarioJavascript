@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Questão 14</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="cabecalho">
+            <h1>Easy</h1>
+            <h2>Questão 14 - Licença de Voo</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                Para pilotar uma nave de pequeno porte em qualquer planeta da Federação é preciso possuir uma licença de voo.
+            </p>
+
+            <br />
+            O código usado na licença de voo é criado a partir de informações de seu dono, como nome e data de nascimento.
+            </p>
+
+            <br />
+            Foi solicitado que você crie um método para gerar a licença de voo de uma determinada pessoa para ser integrado aos sistemas da Federação.
+            É obrigatório fazer isso utilizando uma classe.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p class="enunciado-paragrafo titulo-lista">
+                Escreva uma classe que contenha um método para gerar uma licença de voo e os seguintes atributos:
+            </p>
+
+            <ul>
+                <li>Nome</li>
+                <li>Sobrenome</li>
+                <li>Data de Nascimento</li>
+                <li>Licença de Voo (que deve iniciar sempre como falso)</li>
+            </ul>
+
+            <p>
+                Além disso, a classe deve possuir um método para criar uma licença caso a pessoa ainda não possua uma. A licença deve ser uma string seguindo o seguinte padrão:
+            </p>
+
+            <ul>
+                <li>Os primeiros cinco caracteres do sobrenome em letras maiúsculas (completado com 9's caso possua menos de cinco)</li>
+                <li>O 6º caractere é um traço (-)</li>
+                <li>O 7º caractere é o algarismo da década (penúltimo) do ano de nascimento</li>
+                <li>O 8º e 9º caracteres são o mês de nascimento</li>
+                <li>O 10º caractere é o algarismo do ano (último) do ano de nascimento</li>
+                <li>O 11º caractere é um ponto (.)</li>
+                <li>O 12º caractere é a primeira letra do primeiro nome (minúscula)</li>
+            </ul>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="resolucao">
+            
+            <h2>Execute o Programa</h2>
+
+            <button id="resolver">Resolução</button>
+        </div>
+
+        <button class="retornar">
+            <a href="../../pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
+    </main>
+</body>
+</html>
+
