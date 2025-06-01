@@ -16,7 +16,7 @@ function aoClicar() {
   const n = parseInt(input, 10);
 
   if (isNaN(n) || n <= 0) {
-    alert("Por favor, insira um número inteiro positivo.");
+    alert("Valor inválido, insira um número inteiro positivo.");
   } else {
     const resultado = elevacaoQuadraticaIndividual(n);
     console.log(resultado);

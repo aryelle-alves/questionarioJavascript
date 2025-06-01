@@ -69,6 +69,35 @@ main {
     letter-spacing: 0.1em;
 }
 
+.enunciado-paragrafo.titulo-lista {
+    margin-bottom: 0.5rem;
+}
+
+.enunciado ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.enunciado ul li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #f0f0f0;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.enunciado ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+    font-weight: bold;
+}
+
 .separador-conteudo {
     height: 2px;
     background: linear-gradient(90deg, #ff00ff, #00ffff);

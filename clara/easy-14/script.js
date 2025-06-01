@@ -37,7 +37,7 @@ function aoClicar() {
     return;
   }
 
-  const birthdayInput = prompt("Informe a data de nascimento (AAAA-MM-DD):");
+  const birthdayInput = prompt("Informe a data de nascimento: (formato: (AAAA-MM-DD) ou (AAAA-MM-DD))");
   const birthday = new Date(birthdayInput);
   if (isNaN(birthday.getTime())) {
     alert("Data inválida.");
