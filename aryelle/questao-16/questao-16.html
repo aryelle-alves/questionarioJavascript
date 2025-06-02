@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 16</title>
+    <link rel="icon" href="/imagens/documento.ico" type="image/x-icon">
+    <link rel="stylesheet" href="questao-16.css">
+</head>
+<body>
+    
+    <main>
+        <div class="cabecalho">
+        <h1>Meedium</h1>
+        <h2>Questão 16 - Código Romano II</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                Enquanto em contato com o mesmo povoado do planeta não mapeado, você e sua equipe interceptaram uma tentativa de comunicação que estava sendo enviada para algum lugar.
+            </p>
+            <p class="contexto-paragrafo">
+                O conteúdo parecia estar criptografado utilizando um método primitivo semelhante à cifra de César.
+            </p>
+            <p class="contexto-paragrafo">
+                Agora vocês precisam de um programa capaz de traduzir esse conteúdo a partir de uma chave.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que recebe uma string e um número e retorne o resultado da aplicação da Cifra de César para descriptografar o seu conteúdo, ou seja, que retroceda cada letra pelo número passado seguindo a ordem alfabética.
+            </p>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="container-resolucao">
+            <!--Receber string--> 
+            <h2 class="resolucao">
+                Biblioteca Interplanetária
+            </h2>
+
+             <div class="input-button">
+                <input type="text" id="textoInput" class="entrada" placeholder="Texto criptografado aqui...">
+                <input type="number" id="chaveInput" class="entrada" placeholder="Chave numérica aqui...">
+
+                <!-- Botão de enviar -->
+                <button class="descriptografar-btn">Descriptografar</button>
+             </div>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-16.js"></script>
+        </div>
+
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas:</h3>
+            <ul class="saidas-desejadas">
+                <li>Entrada: ('Vguvg', 2)</br>Saída: 'Teste'</li>
+                <li>Entrada: ('BCDYZAbcdyza', 27)</br>Saída: 'ABCXYZabcxyz'</li>
+                <li>Entrada: ('Qaiik', 60)</br>Saída: 'Isaac'</li>
+                <li>Entrada: ('Amozmlw', 8)</br>Saída: 'Segredo'</li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+                <a href="/pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
+    </main>
+
+</body>
+</html>

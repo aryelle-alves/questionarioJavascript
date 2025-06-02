@@ -61,12 +61,16 @@ main {
     letter-spacing: 0.1em;
 }
 
-.enunciado p {
+.criterios-verificacao ol{
+    margin: 0 30px;
+    padding: 4px 0;
+}
+
+.enunciado p, .criterios-verificacao{
     font-size: 1.1rem;
     background: rgba(0, 255, 255, 0.1);
     padding: 1rem;
     border-left: 4px solid #00ffff;
-    margin-bottom: 2rem;
     text-align: justify;
     letter-spacing: 0.1em;
 }
@@ -113,7 +117,7 @@ h2.resolucao {
     align-items: center;
 }
 
-#fraseInput {
+.entrada {
     background: rgba(20, 20, 40, 0.8);
     border: 2px solid #00ffff;
     border-radius: 4px;
@@ -128,7 +132,7 @@ h2.resolucao {
     transition: all 0.3s ease;
 }
 
-#fraseInput:focus {
+.entrada:focus {
     outline: none;
     border-color: #ff00ff;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);

@@ -4,40 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questão 8</title>
+    <link rel="icon" href="/imagens/documento.ico" type="image/x-icon">
     <link rel="stylesheet" href="questao-8.css">
 </head>
 <body>
+    
     <main>
-        <div class="nao-sei-ainda">
-        <h1>Nível ?</h1>
-        <h2>Questão ? - Título</h2>
+        <div class="cabecalho">
+        <h1>Easy</h1>
+        <h2>Questão 8 - Biblioteca Interplanetária</h2>
         </div>
 
         <div class="contexto">
-            <p>texto de contexto da questão</p>
+            <p class="contexto-paragrafo">
+                A Biblioteca Interplanetária acumula conhecimento de todas as partes da galáxia, possuindo um acervo gigantesco e muito rico.
+            </p>
+            <p class="contexto-paragrafo">
+                Todas as publicações são organizadas por autor e para isso o último nome do autor é utilizado para identificação.
+            </p>
+            <p class="contexto-paragrafo">
+                A direção da biblioteca precisa que você crie um programa para converter o nome completo de um autor para um nome abreviado corretamente no formato utilizado na organização das publicações.
+            </p>
         </div>
 
         <div class="enunciado">
-            <p>enunciado da questão</p>
+            <p>
+                Escreva uma função que recebe uma string contendo um nome completo e retorna uma string com todos os nomes, exceto o último, abreviados e o último nome em letras maiúsculas antes das abreviações separado por vírgula.
+            </p>
         </div>
 
-        <hr>
+        <div class="separador-conteudo"></div>
 
-        <div class="resolucao">
-            <!--passos de resolução--> 
-            <h1>em algm momento aqui vai ter algm coisa</h1>
+        <div class="container-resolucao">
+            <!--Receber string--> 
+            <h2 class="resolucao">
+                Biblioteca Interplanetária
+            </h2>
+
+             <div class="input-button">
+                <input type="text" id="nomeInput"  class="entrada" placeholder="Digite aqui...">
+
+                <!--botão de enviar string--> 
+                <button onclick="formatarNome()" class="resolucao-btn">Resulução</button>
+             </div>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-8.js"></script>
         </div>
 
-        <br>
-        <hr>
 
         <div class="saida-desejada">
             <h3>Saídas Corretas:</h3>
-            <ul>
-                <li>Entrada: </br>Saída:</li>
-                
+            <ul class="saidas-desejadas">
+                <li>Entrada: ('Issac Larrubia Ferreira Pontes')</br>Saída: 'PONTES, I. L. F'</li>
+                <li>Entrada: ('John Ronald Reuel Tolkien')</br>Saída: 'TOLKIEN, J. R. R.'</li>
+                <li>Entrada: ('christopher james paolini')</br>Saída: 'PAOLINI, C. J.'</li>
+                <li>Entrada: ('Suzanne Marie Collins')</br>Saída: 'COLLINS, S. M.'</li>
             </ul>
         </div>
+
+        <button class="retornar">
+                <a href="/pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
     </main>
+
 </body>
 </html>

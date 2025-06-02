@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 18</title>
+    <link rel="icon" href="/imagens/documento.ico" type="image/x-icon">
+    <link rel="stylesheet" href="questao-18.css">
+</head>
+<body>
+    
+    <main>
+        <div class="cabecalho">
+        <h1>Medium</h1>
+        <h2>Questão 18 - Módulo de Treinamento</h2>
+        </div>
+
+        <!-- 
+        <div class="contexto">
+            <p class="contexto-paragrafo"></p>
+        </div>
+        -->
+
+        <div class="enunciado">
+            <p>
+                Escreva uma classe Equation que seja capaz de lidar com equações até o segundo grau.
+            </p>
+            <ul class="criterios-questao">
+                <li class="criterio">
+                    Os objetos podem ser instanciados com valores padrões para <span>a = 0, b = 0 e c = 0</span>.
+                </li>
+                <li class="criterio">
+                    Deve ter um método para retornar suas raízes na forma de um array vazio, de um ou de dois elementos.
+                </li>
+                <li class="criterio">
+                    O método também deve descrever os passos para a resolução da equação.
+                </li>
+                <li class="criterio">
+                    Se <span>a, b e c</span> forem todos iguais a 0, ela não deve calcular as raízes e deve retornar uma mensagem de erro.
+                </li>
+            </ul>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="container-resolucao">
+            <!--Receber string--> 
+            <h2 class="resolucao">
+                História Escondida I
+            </h2>
+
+             <div class="input-button">
+                <input type="text" id="" class="entrada" placeholder="Digite aqui...">
+
+                <!--botão de enviar string--> 
+                <button onclick="" class="resolucao-btn">Resulução</button>
+             </div>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-18.js"></script>
+        </div>
+
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas:</h3>
+            <ul class="saidas-desejadas">
+                <li>
+                    Entrada: (0, 2, 6)</br>Saída: <ol>
+                        <li>2x + 6 = 0</li>
+                        <li>2x = -6</li>
+                        <li>x = -6/2</li>
+                        <li>x = -3</li>
+                        <li>[-3]</li>
+                    </ol>
+                </li>
+                <li>
+                    Entrada: ()</br>Saída: 'Erro! Nnehum parâmetro informado.'
+                </li>
+                <li>
+                    Entrada: (0, 0, 5)</br>Saída: <ol>
+                        <li>Parametros insuficientes. <br> nenhuma raix real.</li>
+                        <li>[]</li>
+                    </ol>
+                </li>
+                <li>
+                    Entrada: (1, -4, -5)</br>Saída: <ol>
+                        <li>∆ = -4² - 4 * 1 * -5</li>
+                        <li>∆ = 36</li>
+                        <li>x' = (-(-4) + √36) / 2 * 1</li>
+                        <li>x" = (-(-4) - √36) / 2 * 1</li>
+                        <li>x' = 4 + √36 / 2</li>
+                        <li>x" = 4 - √36 / 2</li>
+                        <li>x' = 4 + 6 / 2</li>
+                        <li>x" = 4 - 6 / 2</li>
+                        <li>x' = 5</li>
+                        <li>x" = -1</li>
+                        <li>[5, -1]</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+                <a href="/pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
+    </main>
+
+</body>
+</html>

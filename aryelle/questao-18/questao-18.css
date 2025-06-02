@@ -61,7 +61,12 @@ main {
     letter-spacing: 0.1em;
 }
 
-.enunciado p {
+.criterios-questao ol{
+    margin: 0 30px;
+    padding: 4px 0;
+}
+
+.enunciado p, .criterios-questao {
     font-size: 1.1rem;
     background: rgba(0, 255, 255, 0.1);
     padding: 1rem;
@@ -70,6 +75,8 @@ main {
     text-align: justify;
     letter-spacing: 0.1em;
 }
+
+
 
 .separador-conteudo {
     height: 2px;
@@ -128,7 +135,7 @@ h2.resolucao {
     transition: all 0.3s ease;
 }
 
-#fraseInput:focus {
+.entrada:focus {
     outline: none;
     border-color: #ff00ff;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);

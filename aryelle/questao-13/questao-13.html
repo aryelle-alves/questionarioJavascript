@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 13</title>
+    <link rel="icon" href="/imagens/documento.ico" type="image/x-icon">
+    <link rel="stylesheet" href="questao-13.css">
+</head>
+<body>
+    
+    <main>
+        <div class="cabecalho">
+        <h1>Easy</h1>
+        <h2>Questão 13 - Código de Identificação de Nave</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                As naves da Federação utilizam um código único que serve para identificá-las. Esse código é composto de 12 algarismos, sendo o último um dígito verificador..
+            </p>
+            <p class="contexto-paragrafo">
+                Você está construindo em sua própria nave um módulo capaz de analisar um código de identificação recebido e verificar se é um código válido de uma nave da Federação.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que recebe um número e verifica se ele é um código de identificação válido segundo as regras de criação do dígito verificador. A criação do dígito verificador funciona da seguinte forma:
+            </p>
+            <div class="criterios-verificacao">
+                <ol>
+                    <li>Some os dígitos das posições pares (ímpares se estiver contando a partir de 1);</li>
+                    <li>Multiplique esse resultado por 3;</li>
+                    <li>Some os dígitos das posições ímpares (pares se estiver contando a partir de 1) do número original e então some esse resultado ao resultado do passo anterior;</li>
+                    <li>Encontre o resto da divisão do resultado do passo anterior por 10;</li>
+                    <li>Se o resto da divisão for 0, o dígito verificador é 0, do contrário o dígito verificador é 10 - resto.</li>
+                </ol>
+            </div>
+            
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="container-resolucao">
+            <!--Receber string--> 
+            <h2 class="resolucao">
+                Código de Identificação de Nave
+            </h2>
+
+             <div class="input-button">
+                <input type="text" id="codigoInput"  class="entrada" placeholder="Digite aqui...">
+
+                <!--botão de enviar string--> 
+                <button onclick="validarCodigo()" class="resolucao-btn">Resulução</button>
+             </div>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-13.js"></script>
+        </div>
+
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas:</h3>
+            <ul class="saidas-desejadas">
+                <li>Entrada: (547020743789)</br>Saída: 'true'</li>
+                <li>Entrada: (301354030348)</br>Saída: 'true'</li>
+                <li>Entrada: (301354030349)</br>Saída: 'false'</li>
+                <li>Entrada: (123456789872)</br>Saída: 'false'</li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+                <a href="/pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
+    </main>
+
+</body>
+</html>
