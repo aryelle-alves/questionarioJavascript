@@ -154,6 +154,62 @@ button.retornar {
     box-shadow: 0 0 16px rgba(255, 0, 255, 0.8);
 }
 
+#arquivoJson {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+#arquivoJson::-webkit-file-upload-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+}
+
+#arquivoJson:hover::-webkit-file-upload-button {
+    background: #00ffff;
+    color: #0f0f1a;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.8);
+}
+
+/* Firefox */
+#arquivoJson::file-selector-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #00ffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+}
+
+#arquivoJson:hover::file-selector-button {
+    background: #00ffff;
+    color: #0f0f1a;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.8);
+}
+
 /* Responsivo */
 @media (max-width: 600px) {
     .cabecalho h1 {
@@ -166,4 +222,6 @@ button.retornar {
         width: 100%;
         text-align: center;
     }
+
+    
 }
