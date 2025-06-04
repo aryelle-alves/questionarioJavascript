@@ -1,21 +1,25 @@
-function retornaChunk(n) {
- if (n <= 1) {
-    return "chunk"; 
-}
-    return "chunk-" + retornaChunk(n - 1);
 
-    
+function distribuicaoValida(s) {
+    const pilha = [];
+    const pares = { ')': '(', ']': '[', '}': '{' };
+    for (const char of s) {
+        if (char === '(' || char === '[' || char === '{') {
+            pilha.push(char);
+        } else if (char === ')' || char === ']' || char === '}') {
+            if (pilha.pop() !== pares[char]) {
+                return false;
+            }
+        }
+    }
+    return pilha.length === 0;
 }
+
 // Função para lidar com o clique do botão
 function aoClicar() {
-    const input = window.prompt("Informe um número inteiro postivo: ");
-const n = parseInt(input, 10);
-    if (isNaN(n) || n <= 0) {
-        alert("Por favor, insira um número inteiro positivo.");
-    } else {
-        console.log(retornaChunk(n));
-        alert(retornaChunk(n));
-    } // Exibe o resultado no console e em um alerta
+    const input = window.prompt("Informe uma string para verificar a distribuição de parênteses, colchetes e chaves:");
+    if (input === null) return;
+    const resultado = distribuicaoValida(input);
+    alert(resultado ? "TRUE" : "FALSE");
 }
 
  document.getElementById("resolver").addEventListener("click", aoClicar);
