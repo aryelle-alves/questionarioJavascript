@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 22 - Prisão Intergalática</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script22.js" defer></script>
+</head>
+<body>
+   
+    <main>
+        <div class="cabecalho">
+            <h1>Medium</h1>
+            <h2>Questão 22 - Prisão Intergalática</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                A estação espacial Tartarus é utilizada pela Federação como prisão para criminosos de toda a galáxia e foi construída utilizando a mais avançada tecnologia para evitar qualquer possibilidade de fuga.
+                <br>
+                Um dos recursos utilizados é o monitoramento constante de cada prisioneiro, oque deve ser feito com cuidado redobrado quando estes são liberados de suas celas.
+                <br>
+                Sempre que isso ocorre é feito um escaneamento de todos os prisioneiros, que são sempre identificados por números consecutivos e possuem um tempo limite para entrem ou saiam.
+                <br>
+                Ao fim desse tempo é gerada uma lista que deve conter os números de todos os prisioneiros, mesmo que em ordem aleatória.
+                <br>
+                Para garantir que todos entrem e saiam sem que nenhum fique para trás de forma automatizada foi requerido que você construa um código para realizar essa tarefa.
+                <br>
+                Para esse cenário o último número será um verificador que indicará o número total de prisioneiros, portanto nunca estará faltando.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que receba uma lista embaralhada de números únicos de 1 até n no formato "0001" (string com zeros à esquerda), verifique se há elementos faltando (onde n nunca estará faltando) e, caso hajam, retorne os elementos que faltam.
+            </p>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="resolucao">
+            <h2>Execute o Programa</h2>
+            <button id="resolverQuestao22">Resolução</button>
+            <div id="areaResultado" class="resultado-formatado">
+            </div>
+        </div>
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas (Exemplos):</h3>
+            <ul>
+                <li>Entrada: <code>['0020', '0002', '0013', ..., '0010']</code><br>Saída: <code>['0003', '0009', '0014', '0017', '0018', '0019']</code></li>
+                <li>Entrada: <code>['0020', '0009', '0002', ..., '0018']</code> (completa)<br>Saída: <code>[]</code></li>
+                <li>Entrada: <code>['0004', '0002', '0005', '0003']</code><br>Saída: <code>['0001']</code></li>
+                <li>Entrada: <code>[]</code><br>Saída: <code>[]</code></li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+            <a href="../pagina-inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a> 
+        </button>
+    </main>
+
+</body>
+</html>

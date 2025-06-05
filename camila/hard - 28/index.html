@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 28 - Hora de Jogar</title>
+    <link rel="stylesheet" href="style.css"> <script src="script28.js" defer></script> </head>
+<body>
+   
+    <main>
+        <div class="cabecalho">
+            <h1>Hard</h1>
+            <h2>Questão 28 - Hora de Jogar</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                Neste desafio avançado, você é encarregado de desenvolver o sistema de progressão e exploração para os valentes Exploradores da galáxia. Cada explorador embarca em jornadas perigosas, enfrentando planetas de diversas hostilidades e terrenos. Eles ganham experiência, sobem de nível, alcançam novos ranques e podem até se tornar especialistas em certos ambientes, o que lhes confere vantagens táticas. Sua missão é gerenciar todas essas complexas interações, desde o acúmulo de experiência até as tensas rolagens de dados que determinam o sucesso, o fracasso ou até mesmo o destino final do explorador.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Implemente em Javascript uma classe chamada <code>Explorador</code>. Esta classe deverá encapsular todas as regras de criação, progressão de nível (1 a 99), cálculo e acúmulo de pontos de experiência, sistema de ranqueamento, e a mecânica de exploração de planetas. A exploração envolve interagir com objetos <code>Planeta</code> (com atributos como hostilidade e terreno), simular rolagens de dados (2d6), determinar sucesso ou falha, calcular recompensas de XP, registrar planetas explorados com sucesso, e gerenciar a especialização em terrenos (incluindo um bônus de +1 e proteção contra morte em certas condições). A classe também deve lidar com a morte do explorador. Utilize os cenários de teste fornecidos para validar sua implementação.
+            </p>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="resolucao">
+            <h2>Testar Cenários</h2>
+            <button id="rodarCenario1">Rodar Cenário de Teste 1</button>
+            <button id="rodarCenario2">Rodar Cenário de Teste 2</button>
+            
+            <div id="areaResultado" class="resultado-formatado" style="white-space: pre-wrap;">
+                </div>
+        </div>
+
+        <div class="saida-desejada">
+            <h3>Resultados Esperados para os Cenários de Teste:</h3>
+            <p><strong>Cenário 1:</strong> (Explorador Nv.9, 1340 XP, 2 acertos críticos em floresta, explora Planeta 1 neutro/floresta)</p>
+            <ul>
+                <li>Ganha 25 XP (total 1365 XP).</li>
+                <li>Avança para o nível 10.</li>
+                <li>Ranque muda para "Explorador".</li>
+                <li>Torna-se especialista em terrenos 'forest' (3º acerto crítico) e ganha bônus de +1 para esse terreno.</li>
+                <li>'Planeta 1' adicionado aos planetas conhecidos.</li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>Cenário 2:</strong> (Continuação, explorador explora Planeta 2 hostil/deserto e tira 2 na rolagem original)</p>
+            <ul>
+                <li>Morre (falha crítica, não é especialista em deserto).</li>
+                <li>Objeto do explorador mantém suas informações (nível, XP, etc.), mas status muda para morto.</li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+            <a href="../pagina-inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a> 
+        </button>
+    </main>
+
+</body>
+</html>

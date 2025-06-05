@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11 - Intervalo de Coordenadas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script11.js" defer></script>
+</head>
+<body>
+   
+    <main>
+        <div class="cabecalho">
+            <h1>Easy</h1>
+            <h2>Questão 11 - Intervalo de Coordenadas</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                O capitão da sua nave precisa que você implemente no sistema principal uma forma de obter todas as coordenadas abaixo de um determinado ponto partindo da origem (0, 0) e retorne isso para o sistema em uma lista ordenada crescente. As coordenadas são escritas na forma de pares ordenados (x, y).
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que receba um par ordenado (x, y) e retorne um array de pares (x, y) onde cada um deles possui x e y menor ou igual ao par recebido em ordem crescente.
+                <br>
+                Os pares devem ser ordenados de forma que primeiro aumente o valor de y e depois o valor de x. (Nota: A ordem seguirá o exemplo: x externo, y interno).
+                <br>
+                Apenas o quadrante onde x e y são positivos deve ser considerado.
+            </p>
+        </div>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="resolucao">
+            <h2>Execute o Programa</h2>
+            <button id="resolverQuestao11">Resolução</button>
+            <div id="areaResultado" class="resultado-formatado">
+            </div>
+        </div>
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas (Exemplos):</h3>
+            <ul>
+                <li>Entrada: <code>(2, 2)</code><br>Saída: <code>[[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]</code></li>
+                <li>Entrada: <code>(2, 7)</code><br>Saída: (Exemplo: <code>[[0,0],...,[0,7],[1,0],...,[1,7],[2,0],...,[2,7]]</code>)</li>
+                <li>Entrada: <code>(-3, -3)</code><br>Saída: <code>[]</code></li>
+                <li>Entrada: <code>(7, 6)</code><br>Saída: (Exemplo: <code>[[0,0],...,[0,6],...,[7,0],...,[7,6]]</code>)</li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+            <a href="../pagina-inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a> 
+        </button>
+    </main>
+
+</body>
+</html>
