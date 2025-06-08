@@ -3,16 +3,13 @@ function formatarNome() {
 
     const nomeCompleto = document.getElementById('nomeInput').value.trim();
 
-    // Validação
     if (nomeCompleto === '') {
         alert('⚠️ Digite um nome válido ⚠️');
         return;
     }
 
-    // Processamento
     const nomeFormatado = processarNome(nomeCompleto);
 
-    // Mostrar resultados
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
 
@@ -33,3 +30,15 @@ function processarNome(nomeCompleto) {
 
     return "' "  + ultimoNome + ', ' + iniciais + " '";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Configura o listener para o botão existente
+    document.querySelector('.resolucao-btn').addEventListener('click', formatarNome);
+    
+    // Adiciona o listener para o Enter no campo de entrada
+    document.getElementById('nomeInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            formatarNome(); // Chama a mesma função do botão
+        }
+    });
+});

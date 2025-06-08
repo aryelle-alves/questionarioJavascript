@@ -37,4 +37,10 @@ function aplicarCifraCesar(texto, chave) {
 // Configura o event listener
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.descriptografar-btn').addEventListener('click', descriptografarCesar);
+
+    document.querySelector('.entrada').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            descriptografarCesar();
+        }
+    });
 });
