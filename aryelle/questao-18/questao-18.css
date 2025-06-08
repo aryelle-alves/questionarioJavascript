@@ -61,12 +61,7 @@ main {
     letter-spacing: 0.1em;
 }
 
-.criterios-questao ol{
-    margin: 0 30px;
-    padding: 4px 0;
-}
-
-.enunciado p, .criterios-questao {
+.enunciado p {
     font-size: 1.1rem;
     background: rgba(0, 255, 255, 0.1);
     padding: 1rem;
@@ -76,7 +71,15 @@ main {
     letter-spacing: 0.1em;
 }
 
-
+.criterios-questao {
+    font-size: 1.1rem;
+    background: rgba(0, 255, 255, 0.1);
+    padding: 1.6rem;
+    border-left: 4px solid #00ffff;
+    margin-bottom: 2rem;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
 
 .separador-conteudo {
     height: 2px;
@@ -175,14 +178,33 @@ button:hover {
     box-shadow: 0 0 16px rgba(0, 255, 255, 0.8);
 }
 
-
-
 /* Exemplos de Saídas */
 .saida-desejada h3 {
     font-size: 1.25rem;
     color: #00ffff;
     margin-bottom: 1rem;
     letter-spacing: 0.1em;
+}
+
+.calculo-exemplo {
+    font-family: 'Times New Roman', serif;
+    color: aquamarine;
+    padding-left: 4rem;
+}
+
+.calculo {
+    font-family: 'Times New Roman', serif;
+    color: aquamarine;
+}
+
+.calculo-aviso {
+    color: red !important;
+    padding-left: 4rem;
+}
+
+.steps-list {
+    list-style-type: none;
+    text-align: left;
 }
 
 .saida-desejada ul {
@@ -199,6 +221,9 @@ button:hover {
     letter-spacing: 0.1em;
 }
 
+
+
+/* Botão RETORNAR para Página Inicial */
 button.retornar {
     margin-top: 2rem;
     display: block;
