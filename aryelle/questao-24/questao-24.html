@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 24</title>
+    <link rel="icon" href="/imagens/documento.ico" type="image/x-icon">
+    <link rel="stylesheet" href="questao-24.css">
+</head>
+<body>
+    
+    <main>
+        <div class="cabecalho">
+        <h1>Hard</h1>
+        <h2>Questão 24 - Verificação de Usuário</h2>
+        </div>
+
+        <div class="contexto">
+            <p class="contexto-paragrafo">
+                Em uma nave de grande porte existem muitos terminais de acesso ao sistema principal, e para se conectar através deles um membro da tripulação deve utilizar seu nome de usuário, senha e verificação biométrica.
+            </p>
+            <p class="contexto-paragrafo">
+                O nome de usuário deve ser validado segundo algumas regras antes que possa ser cadastrado.
+            </p>
+            <p class="contexto-paragrafo">
+                Sua tarefa atual é construir um mecanismo de validação de nomes de usuário para ser utilizado pelo sistema de cadastro.
+            </p>
+        </div>
+
+        <div class="enunciado">
+            <p>
+                Escreva uma função que recebe uma string e verifica se ela atende aos seguintes requisitos:
+            </p>
+        </div>
+
+        <ul class="criterios-verificacao">
+            <li>Deve conter entre 4 e 32 caracteres;</li>
+            <li>Deve conter apenas letras (sem acentos), números ou underscore (_);</li>
+            <li>Deve começar com uma letra;</li>
+            <li>Não pode terminar com underscore (_);</li>
+            <li>Deve conter pelo menos um de cada tipo de caractere (letra, número e underscore);</li>
+            <li>Deve ser único;</li>
+            <li class="observacao"><span class="obs-span">Obs.:</span> Para isso você pode utilizar qualquer meio que achar válido para simular um banco de dados, como um array contendo vários nomes fictícios para comparação, por exemplo.</li>
+             <li>Caso atenda, retorne true, caso não atenda retorne false.</li>
+        </ul>
+
+        <div class="separador-conteudo"></div>
+
+        <div class="container-resolucao">
+            <!--Receber string--> 
+            <h2 class="resolucao">
+                Verificação de Usuário
+            </h2>
+
+             <div class="input-button">
+                <input type="text" id="" class="entrada" placeholder="Usuário aqui...">
+
+                <!--botão de enviar string--> 
+                <button onclick="" class="resolucao-btn">Resulução</button>
+             </div>
+
+            <!--resposta-->
+            <div id="resultado"></div>
+            <script src="questao-24.js"></script>
+        </div>
+
+        <div class="saida-desejada">
+            <h3>Saídas Corretas:</h3>
+            <ul class="saidas-desejadas">
+                <li>Usuários já registrados: <span class="users-span">['erick_14', 'pam_ls2', 'VICTOR_99A']</span></li>
+                <li>Entrada: ('52alfred')</br>Saída: 'false'</li>
+                <li>Entrada: ('erick_14')</br>Saída: 'true'</li>
+                <li>Entrada: ('josh_g15')</br>Saída: 'true'</li>
+                <li>Entrada: ('hugo123_')</br>Saída: 'false'</li>
+                <li>Entrada: ('k_9')</br>Saída: 'false'</li>
+            </ul>
+        </div>
+
+        <button class="retornar">
+                <a href="/pagina inicial/pagina-inicial.html" class="botao-retorno">Página Inicial</a>
+        </button>
+    </main>
+
+</body>
+</html>
